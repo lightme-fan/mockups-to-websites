@@ -3,20 +3,37 @@
 }
 
 @media (min-width: 768px) {
-  #section_trending article {
+  #section_trending {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     row-gap: 0;
     grid-template-areas:
-    "heading heading"
-    "first_swatch second_swatch"
-    "first_swatch second_swatch"
-    "first_swatch second_swatch";
+          "heading heading"
+          "first_swatch second_swatch"
+          "first_swatch second_swatch"
+          "first_swatch second_swatch"
+          "first_swatch second_swatch"
+          "first_swatch second_swatch";
   }
+
   #section_trending > .heading {
     grid-area: heading;
   }
+
+  /* #section_trending > .article_swatch {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    row-gap: 0;
+    grid-template-areas:
+          "first_swatch  second_swatch"
+          "first_swatch  second_swatch"
+          "first_swatch  second_swatch"
+          "first_swatch  second_swatch"
+          "first_swatch  second_swatch";
+
+  } */
 
   #section_trending > .article_swatch:nth-of-type(1) {
     grid-area: first_swatch;
