@@ -14,3 +14,18 @@
   border-block-start: 2px solid #EBEDED;
   padding-block-start: 2.5rem;
 }
+
+@media (min-width: 768px) {
+  #section_happening_now {
+    padding-inline-start: 7rem;
+    padding-inline-end: 7rem;
+  }
+
+  #section_happening_now > .article_card > .article_header > .article_title {
+    padding-block-start: 8rem;
+  }
+
+  #section_happening_now > .article_simple {
+    columns: 2;
+  }
+}
