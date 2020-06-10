@@ -3,3 +3,17 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  #section_featured article {
+    padding: 4rem;
+  }
+
+  #section_featured .category {
+    padding-block-start: 3rem;
+  }
+
+  .article_description > p:last-of-type {
+    padding-block-end: 2rem;
+  }
+}
