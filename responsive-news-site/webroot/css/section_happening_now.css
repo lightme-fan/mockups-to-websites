@@ -62,6 +62,10 @@
     display: none;
   }
 
+  .article_simple {
+  padding-block-start: 1rem;
+  }
+
   .article_simple .article_image {
     margin-block-end: -14rem;
   }
