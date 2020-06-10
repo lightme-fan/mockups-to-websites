@@ -1,0 +1,6 @@
+@media (min-width: 1024px) {
+  body > header {
+    padding: 1rem;
+  }
+
+}
