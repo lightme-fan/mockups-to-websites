@@ -1,0 +1,199 @@
+@media (min-width: 768px) {
+  :root {
+    --display: grid;
+    --grid-template-columns: repeat(2, 1fr);
+    --padding: 2rem;
+    --gap: 2rem;
+    --margin: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #section_more_news {
+    display: var(--display);
+    grid-template-columns: var(--grid-template-columns);
+    gap: var(--gap);
+    row-gap: calc(var(--gap) * 0);
+    grid-template-areas:
+              "header header"
+              "first_article second_article"
+              "first_article second_article"
+              "first_article second_article";
+    padding-inline-start: calc(var(--padding) * 2);
+    padding-inline-end: calc(var(--padding) * 2);
+  }
+
+  #section_more_news > header {
+    grid-area: header;
+    margin-block-end: calc(var(--margin) * 0);
+  }
+
+  #section_more_news > .article_longform:nth-of-type(1) {
+    grid-area: first_article;
+  }
+
+  #section_more_news > .article_longform:nth-of-type(2) {
+    grid-area: second_article;
+  }
+
+  .article_swatch .article_image img {
+    height: 60%;
+    transform: translate(-50%, -90%);
+  }
+
+  .article_swatch .article_image {
+    margin-block-end: calc(var(--margin) * (-10));
+  }
+}
+
+@media (min-width: 768px) {
+  #section_trending {
+    display: var(--display);
+    grid-template-columns: var(--grid-template-columns);
+    gap: var(--gap);
+    row-gap: calc(var(--gap) * 0);
+    grid-template-areas:
+          "heading heading"
+          "first_swatch second_swatch"
+          "first_swatch second_swatch"
+          "first_swatch second_swatch"
+          "first_swatch second_swatch"
+          "first_swatch second_swatch";
+    padding-inline-start: 7rem;
+    padding-inline-end: 7rem;
+  }
+
+  #section_trending > .heading {
+    grid-area: heading;
+  }
+
+  #section_trending > .article_swatch:nth-of-type(1) {
+    grid-area: first_swatch;
+  }
+
+  #section_trending > .article_swatch:nth-of-type(2) {
+    grid-area: second_swatch;
+  }
+
+  #section_trending > .article_swatch:nth-of-type(3) {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: var(--display);
+    gap: var(--gap);
+  }
+
+  footer > h2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-block-end: calc(var(--margin) * 0);
+  }
+
+  footer > .links_site {
+    columns: 3;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    margin: calc(var(--margin) * 0);
+  }
+
+  footer > .links_social {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    align-self: end;
+    align-items: end;
+    padding-inline-start: 17rem;
+  }
+
+  footer > .form_subscribe{
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    margin-block-start: calc(var(--margin) * 0);
+  }
+
+  .link_primary {
+    display: block;
+  }
+
+  .links_site > li:nth-of-type(1) {
+    margin-block-start: calc(var(--margin) * 0);
+  }
+
+}
+
+@media (min-width: 768px) {
+  #section_featured article {
+    padding: calc(var(--padding) * var(--padding));
+  }
+
+  #section_featured .category {
+    padding-block-start: 3rem;
+  }
+
+  .article_description > p:last-of-type {
+    padding-block-end: var(--padding);
+  }
+}
+
+@media (min-width: 768px) {
+  #section_happening_now {
+    padding-inline-start: 7rem;
+    padding-inline-end: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    grid-template-areas:
+          "header header"
+          "first_card first_card"
+          "first_card first_card"
+          "second_card second_card"
+          "second_card second_card"
+          "first_simple second_simple"
+          "first_simple second_simple"
+          "first_simple second_simple";
+    margin-block-end: -6rem;
+  }
+
+  #section_happening_now > .article_card > .article_header > .article_title {
+    padding-block-start: 8rem;
+  }
+
+  #section_happening_now > header {
+    grid-area: header;
+  }
+
+  #section_happening_now > .article_card:nth-of-type(1) {
+    grid-area: first_card;
+  }
+
+  #section_happening_now > .article_card:nth-of-type(2) {
+    grid-area: second_card;
+  }
+
+  #section_happening_now > .article_simple:nth-of-type(1) {
+    grid-area: first_simple;
+  }
+
+  #section_happening_now > .article_simple:nth-of-type(2) {
+    grid-area: second_simple;
+  }
+
+  #section_happening_now > .article_simple:last-of-type {
+    display: none;
+  }
+
+  .article_simple {
+  padding-block-start: 1rem;
+  }
+
+  .article_simple .article_image {
+    margin-block-end: -14rem;
+  }
+
+  .article_simple .article_image img {
+    height: 50%;
+    transform: translate(-50%, -130%);
+  }
+}
