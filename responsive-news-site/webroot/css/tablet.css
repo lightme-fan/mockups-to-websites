@@ -125,7 +125,7 @@
 
 @media (min-width: 768px) {
   #section_featured article {
-    padding: calc(var(--padding) * var(--padding));
+    padding: calc(var(--padding) * 2);
   }
 
   #section_featured .category {
