@@ -1,5 +1,14 @@
-@media (min-width: 1024px) {
-  body > header {
-    padding: 1rem;
+@media (min-width: 1044px) {
+  #section_featured article {
+    padding: calc(var(--padding) * 4);
+  }
+
+  #section_featured article {
+    width: 58%;
+    margin-inline-end: 0;
+  }
+
+  .article_card .article_image img {
+    opacity: .9;
   }
 }
