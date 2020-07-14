@@ -1,4 +1,4 @@
-@media (min-width: 1044px) {
+@media (min-width: 1440px) {
   #section_featured article {
     padding: calc(var(--padding) * 3);
   }
@@ -23,14 +23,15 @@
   main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 0;
     grid-template-areas:
-        "world-news world-news more-news"
-        "trending trending trending"
-        "trending trending trending"
+        "news news news"
         "trending trending trending"
         "hapening-now hapening-now hapening-now"
-        "hapening-now hapening-now hapening-now"
-        "hapening-now hapening-now hapening-now";
+  }
+
+  #news {
+    grid-area: news;
   }
 
   #section_featured {
